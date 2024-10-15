@@ -1,0 +1,8 @@
+<additionals>
+    <tlLogic id="J5" type="delay_based" programID="0" offset="0">
+        <phase duration="82" state="G" minDur="5" maxDur="50"/>
+        <phase duration="3"  state="y"/>
+        <phase duration="5"  state="r"/>
+    </tlLogic>
+
+</additionals>
