@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-11-07 23:09:29 by Eclipse SUMO netedit Version 1.21.0
+<!-- generated on 2024-11-18 15:13:44 by Eclipse SUMO netedit Version 1.21.0
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <sumocfg-file value="C:\Users\Nomeh\Dev\RL_project\network.sumocfg"/>
-        <additional-files value="C:\Users\Nomeh\Dev\RL_project\network.add.xml"/>
-        <route-files value="C:\Users\Nomeh\Dev\RL_project\network.rou.xml"/>
-        <sumo-net-file value="C:\Users\Nomeh\Dev\RL_project\network.net.xml"/>
+        <sumocfg-file value="C:/Users/souso/Documents/GitHub/RL_Project/Simulation/network.sumocfg"/>
+        <additional-files value="C:/Users/souso/Documents/GitHub/RL_Project/Simulation/network.add.xml"/>
+        <route-files value="C:/Users/souso/Documents/GitHub/RL_Project/Simulation/network.rou.xml"/>
+        <sumo-net-file value="C:/Users/souso/Documents/GitHub/RL_Project/Simulation/network.net.xml"/>
     </input>
 
     <output>
-        <output-file value="C:\Users\Nomeh\Dev\RL_project\network.net.xml"/>
+        <output-file value="C:/Users/souso/Documents/GitHub/RL_Project/Simulation/network.net.xml"/>
     </output>
 
     <processing>
@@ -32,6 +32,10 @@
     <pedestrian>
         <walkingareas value="0"/>
     </pedestrian>
+
+    <netedit>
+        <ignore.routeelements value="false"/>
+    </netedit>
 
 </neteditConfiguration>
 -->
@@ -57,10 +61,10 @@
         <lane id="E7_2" index="2" speed="13.89" length="399.60" shape="-193.81,294.17 -233.58,245.06 -225.65,184.12 -177.06,147.67 -89.74,142.66 29.50,142.34"/>
     </edge>
 
-    <tlLogic id="J5" type="delay_based" programID="0" offset="0">
+    <tlLogic id="J5" type="actuated" programID="0" offset="0">
         <phase duration="82" state="G" minDur="5" maxDur="50"/>
-        <phase duration="0.01"  state="y"/>
-        <phase duration="0.01"  state="r"/>
+        <phase duration="3"  state="y"/>
+        <phase duration="5"  state="r"/>
     </tlLogic>
 
     <junction id="J1" type="zipper" x="52.10" y="143.88" incLanes="E3_0 E7_0 E7_1 E7_2" intLanes="" shape="44.66,143.94 44.58,134.34 41.60,134.24 39.43,133.86 37.69,133.22 36.02,132.31 34.03,131.12 31.38,129.66 29.92,132.50 29.48,134.34 29.50,143.94">
